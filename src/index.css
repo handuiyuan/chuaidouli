@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 20% 97%;
+    --foreground: 30 10% 15%;
+    --card: 0 0% 100%;
+    --card-foreground: 30 10% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 30 10% 15%;
+    --primary: 25 60% 35%;
+    --primary-foreground: 40 20% 97%;
+    --secondary: 40 15% 92%;
+    --secondary-foreground: 30 10% 25%;
+    --muted: 40 10% 94%;
+    --muted-foreground: 30 8% 50%;
+    --accent: 25 45% 88%;
+    --accent-foreground: 25 60% 25%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 35 15% 88%;
+    --input: 35 15% 88%;
+    --ring: 25 60% 35%;
+    --radius: 0.25rem;
+  }
+}
+
+@layer base {
+  * { @apply border-border; }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Noto Serif SC', 'Georgia', serif;
+    letter-spacing: 0.01em;
+  }
+}
+
+/* 日式极简装饰线 */
+.divider-jp {
+  @apply flex items-center gap-4 my-8;
+}
+.divider-jp::before,
+.divider-jp::after {
+  content: '';
+  @apply flex-1 h-px bg-stone-200;
+}
+
+/* 标签样式 */
+.tag-chip {
+  @apply inline-flex items-center px-2 py-0.5 text-xs tracking-wide border border-stone-200 text-stone-500 bg-white;
+}
+
+/* 图鉴卡片 hover */
+.toy-card {
+  @apply transition-all duration-300 ease-out;
+}
+.toy-card:hover {
+  @apply -translate-y-1 shadow-lg shadow-stone-200/60;
+}
+
+/* 品相标签 */
+.condition-dot::before {
+  content: '●';
+  @apply mr-1 text-xs;
+}
+
+/* 滚动条美化 */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { @apply bg-stone-100; }
+::-webkit-scrollbar-thumb { @apply bg-stone-300 rounded-full; }
+::-webkit-scrollbar-thumb:hover { @apply bg-stone-400; }
