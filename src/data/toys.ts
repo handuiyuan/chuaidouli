@@ -46,6 +46,15 @@ export const brands: Brand[] = [
     foundedYear: 1945,
     toyCount: 2,
   },
+  {
+    id: 'clover',
+    name: 'クローバー CLOVER',
+    nameEn: 'CLOVER',
+    description: '日本三叶草玩具，80年代高达软胶的主要制造商，以16cm标准尺寸著称，是昭和软胶时代的重要一员。',
+    country: '日本',
+    foundedYear: 1970,
+    toyCount: 1,
+  },
 ];
 
 export const toys: Toy[] = [
@@ -269,6 +278,26 @@ export const toys: Toy[] = [
       'https://images.unsplash.com/photo-1594787318286-3d835c1d207f?w=600&q=80',
     ],
     featured: false,
+  },
+  {
+    id: 'clover-gundam-16cm',
+    name: '高达 软胶 16cm',
+    nameEn: 'Gundam Sofubi 16cm',
+    brand: 'クローバー CLOVER',
+    series: '高达 Gundam',
+    year: 1983,
+    origin: '日本',
+    material: '软胶（Sofubi）',
+    scale: '全高约 16cm',
+    condition: 'good',
+    tags: ['高达', '软胶', 'Sofubi', '80年代', 'CLOVER'],
+    description: 'CLOVER（三叶草）出品的16cm标准尺寸高达软胶，主体由四个分件组成：双臂、头胸一体、双腿一体。可动部位仅限于这些关节，头部无法单独转动。虽然没有更精细的可动，但胜在把玩性高，方便携带拍照，是80年代软胶玩具的典型代表。',
+    story: '高达这种软胶玩具在国内地位很奇怪，不同玩家看他的角度决定了他的价值。对模型玩家来说，它太粗糙；对特摄玩家来说，它太小；但对于喜欢把玩、拍照、收集昭和情怀的玩家来说，它恰恰最有吸引力。Sofubi高达的优势在哪里？它可以扔包里带出门啊，所以很适合拍照——这也是为什么很多玩家用它来记录生活、创作场景的原因。CLOVER的16cm尺寸是那个年代的标准配置，虽然和现在的收藏级相比显得简单，但那种"拿在手里有质感"的感觉，是现代精密模型无法替代的。',
+    wechatArticleUrl: 'https://mp.weixin.qq.com/s/9BGfhG2U2QDOHDBaWSHx2w',
+    images: [
+      'https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?w=600&q=80',
+    ],
+    featured: true,
   },
 ];
 
